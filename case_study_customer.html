@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Public Distribution System</title>
+
+    <style>
+
+      h1{
+        
+        padding-top: 5%;
+        text-align: center;
+      }
+
+      body{
+        font-family: "Lato";
+        font-size: 1rem;
+        font-weight: 400;
+        color: #040349;
+        /*background-color: rgb(40, 155, 201);*/
+        background: url(https://images.unsplash.com/photo-1605309367703-fc6e040816bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover;
+      }
+
+      .panel-body{
+        text-align: center;
+        padding-left: 35%;
+        padding-right: 35%;
+      }
+
+       input[type=submit] {
+          background-color: rgb(31, 31, 31);
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+
+        button[type=submit] {
+          background-color: rgb(31, 31, 31);
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+
+        input[type=text] {
+          width: 50%;
+          padding: 6px 10px;
+          margin: 4px 0;
+          box-sizing: border-box;
+          border: none;
+          background-color: white;
+          color: black;
+        }
+
+        input[type=password] {
+          width: 50%;
+          padding: 6px 10px;
+          margin: 4px 0;
+          box-sizing: border-box;
+          border: none;
+          background-color: white;
+          color: rgb(0, 0, 0);
+        }
+
+    </style>
+
+
+  </head>
+  <body>
+    <h1>Customer page</h1>
+    <br><br>
+    
+    <div class="panel-body">
+  
+    <form action="http://localhost:8000/custcreate" method="POST"> 
+        <input type="text" name="username" placeholder="Username"> <br><br>
+        <input type="password" name="password" placeholder="Password" style="padding-right: 2%;" > <br><br><br>
+        <input type="submit" name="admin" value="Create" style="padding-right: 10%; padding-left: 10%; "><br><br>
+        <button type="submit" style="padding-right: 5%; padding-left: 5%;"formaction="file:///D:/Node/case_study_customer_submit.html">Submit Details</button><br><br>
+        <button type="submit" style="padding-right: 2.2%; padding-left: 2.2%; "formaction="file:///D:/Node/case_study_request.html">Request to change</button><br><br>
+        <button type="submit" style="padding-right: 4.3%; padding-left: 4.3%; "formaction="http://localhost:8000/custview">View my details</button><br><br>
+
+    </form>
+
+    </div>
+
+
+  </body>
+</html>

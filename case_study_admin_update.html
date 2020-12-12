@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Public Distribution System</title>
+
+    <style>
+
+      
+      h1{
+        padding-top: 5%;
+        text-align: center;
+      }
+
+      body{
+        font-family: "Lato";
+        font-size: 1rem;
+        font-weight: 400;
+        color: #040349;
+        /*background-color: rgb(40, 155, 201);*/
+        background: url(https://images.unsplash.com/photo-1605309367703-fc6e040816bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover;
+      }
+
+
+       input[type=submit] {
+          background-color: rgb(0, 0, 0);
+          border: none;
+          color: rgb(255, 255, 255);
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+
+        button[type=submit] {
+          background-color: rgb(141, 139, 139);
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+
+        input[type=text] {
+          width: 50%;
+          padding: 6px 10px;
+          
+          margin: 4px 0;
+          box-sizing: border-box;
+          border: none;
+          background-color: white;
+          color: black;
+        }
+
+        input[type=password] {
+          width: 50%;
+          padding: 6px 10px;
+          margin: 4px 0;
+          box-sizing: border-box;
+          border: none;
+          background-color: white;
+          color: rgb(0, 0, 0);
+        }
+
+        input[type=number] {
+          width: 50%;
+          padding: 6px 10px;
+          margin: 4px 0;
+          box-sizing: border-box;
+          border: none;
+          background-color: white;
+          color: rgb(0, 0, 0);
+        }
+
+        .panel-body{
+          text-align: center;
+          padding-left: 35%;
+          padding-right: 35%;
+        
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>Update Card</h1>
+    <br><br>
+    
+
+    <div class="panel-body">
+
+    <form action="http://localhost:8000/custupdate" method="POST">
+        <input type="password" name="secretcode" placeholder="Secret code"><br><br>
+        <input type="text" name="username" placeholder="Username"><br><br>
+        <input type="text" name="card" placeholder="Card Type"><br><br>
+
+            
+
+        <input type="submit" name="update_type" value="Update">
+    </form>
+
+  </div>
+
+    <br>
+
+
+  </body>
+</html>
